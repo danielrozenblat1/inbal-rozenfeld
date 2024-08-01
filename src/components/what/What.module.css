@@ -1,0 +1,95 @@
+.container {
+  background: linear-gradient(135deg, #FEBCA6 0%, #FFF0EB 100%);
+  border-radius: 30px 30px 30px 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: relative;
+  width: 300px;
+  margin:15px auto;
+  height: auto;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: 'Assistant';
+  font-size: 24px;
+  color: #4a3728;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 30%;
+}
+
+.description {
+  font-family: 'AssistantR';
+  font-size: 18px;
+  color: #6b5744;
+  text-align: right;
+}
+
+/* Responsive styles */
+@media (max-width: 350px) {
+  .container {
+      width: 80%;
+      padding: 8px 15px;
+      border-radius: 20px 20px 20px 0px;
+  }
+  .title {
+      font-size: 20px;
+  }
+  .icon {
+      width: 25%;
+  }
+  .description {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .container {
+      width: 80%;
+      padding: 9px 18px;
+  }
+  .title {
+      font-size: 22px;
+  }
+  .icon {
+      width: 28%;
+  }
+  .description {
+      font-size: 17px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .container {
+      width: 75%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+  .container {
+      width: 65%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  .container {
+      width: 50%;
+  }
+}
+

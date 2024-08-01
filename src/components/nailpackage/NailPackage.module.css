@@ -1,0 +1,142 @@
+.box {
+    background: linear-gradient(135deg, #febca6b7 0%, #FFF0EB 100%);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 2% auto;
+    width: 550px;
+    height: auto;
+    padding: 30px;
+  
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.title {
+    font-family: 'Assistant';
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.courseContent {
+    font-family: 'AssistantR';
+    font-size: 18px;
+    color: #555555;
+    text-align: center;
+    direction: rtl;
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+.courseList {
+    list-style-type: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.courseList li {
+    padding: 10px 0;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseList li::before {
+    content: "✓";
+    color: #000000;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 350px) {
+    .box {
+        width: 85%;
+        margin:20px auto;
+        padding: 15px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .courseContent, .courseList li {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+    .box {
+        width: 85%;
+        margin:20px auto;
+        padding: 20px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .courseContent, .courseList li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+    .box {
+        width: 80%;
+        margin:20px auto;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .courseContent, .courseList li {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+    .box {
+        width: 400px;
+        margin:20px auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+    .box {
+        width: 520px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+    .box {
+        width: 530px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+    .box {
+        width: 540px;
+    }
+}
+
+@media (min-width: 950px) {
+    .box {
+        width: 550px;
+    }
+}
