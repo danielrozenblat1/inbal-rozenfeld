@@ -4,16 +4,38 @@
     text-align: center;
     margin: 2% auto;
     direction: rtl;
+  
 }
-
+.description{
+    font-size:1.4rem;
+    font-family: "AssistantR";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin:1% auto;
+    direction: rtl;
+    width:70%;
+}
 .more {
     font-size: 2.5rem;
     font-family: "Assistant";
     text-align: center;
     margin: 2% auto;
     direction: rtl;
+    
 }
-
+.quate {
+    font-size: 2.5rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 3% auto;
+    direction: rtl;
+  
+    background: linear-gradient(146deg, rgb(96, 73, 40) 0%, rgb(77, 59, 33) 30%, rgb(84, 62, 31) 50%, rgb(71, 47, 12) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -28,12 +50,17 @@
         font-size: 2.2rem;
         margin:3% auto;
     }
-    .more {
-        font-size: 1.8rem;
+    .more,.quate  {
+        font-size: 1.4rem;
+        width:95%;
     }
     .row {
         flex-direction: column;
         align-items: center;
+    }
+    .description{
+        font-size:1.1rem;
+      width:90%;
     }
 }
 
@@ -41,8 +68,13 @@
     .title {
         font-size: 2.5rem;
     }
-    .more {
-        font-size: 1.8rem;
+    .more,.quate  {
+        font-size: 1.5rem;
+        width:95%;
+    }
+    .description{
+        font-size:1.15rem;
+      width:90%;
     }
     .row {
         flex-direction: column;
@@ -54,8 +86,13 @@
     .title {
         font-size: 2.8rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2rem;
+        width:90%;
+    }
+    .description{
+        font-size:1.2rem;
+      width:90%;
     }
 }
 
@@ -63,8 +100,12 @@
     .title {
         font-size: 3rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.2rem;
+    }
+    .description{
+        font-size:1.25rem;
+      width:90%;
     }
 }
 
@@ -72,8 +113,12 @@
     .title {
         font-size: 3.2rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.4rem;
+    }
+    .description{
+        font-size:1.3rem;
+      width:80%;
     }
 }
 
@@ -81,8 +126,12 @@
     .title {
         font-size: 3.4rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.2rem;
+    }
+    .description{
+        font-size:1.35rem;
+      width:75%;
     }
 }
 
@@ -90,8 +139,12 @@
     .title {
         font-size: 3.5rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.4rem;
+    }
+    .description{
+        font-size:1.4rem;
+      width:75%;
     }
 }
 
@@ -99,7 +152,7 @@
     .title {
         font-size: 3.6rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.5rem;
     }
 }
@@ -108,7 +161,7 @@
     .title {
         font-size: 3.7rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.5rem;
     }
 }
@@ -117,7 +170,8 @@
     .title {
         font-size: 3.8rem;
     }
-    .more {
+    .more,.quate  {
         font-size: 2.5rem;
+     
     }
 }

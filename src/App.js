@@ -8,6 +8,8 @@ import AboutMe from './components/me/Me';
 import BasicAccordion from './components/Akordion/Akordion';
 import { useEffect, useState } from 'react';
 import ByMe from './components/ByMe/ByMe';
+import ForthScreen from './screens/ForthScreen';
+import Silabus from './components/silabus/Silabus';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,13 +34,16 @@ function App() {
     }
   };
   return <>
+  <div class="app">
   <NavBarNew/>
   <FirstScreen scrolled={scrolled}/>
   <SecondScreen/>
-  <AboutMe/>
+
   <ThirdScreen/>
   <BasicAccordion/>
+ {/* <ForthScreen/> */}
   <ByMe/>
+  </div>
   </>
 }
 

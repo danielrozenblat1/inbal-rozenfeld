@@ -59,20 +59,20 @@ const FormScreen = (props) => {
         <input
           type="text"
           className={styles.input}
-          placeholder="מה השם שלך?"
+          placeholder="שם מלא"
           ref={nameRef}
 
         />
         <input
           type="tel"
           className={styles.input}
-          placeholder="מה המספר שלך?"
+          placeholder="מספר טלפון"
           ref={phoneRef}
         />
         <input
           type="email"
           className={styles.input}
-          placeholder="מה המייל שלך?"
+          placeholder="מייל"
           ref={emailRef}
         />
         <button onClick={submitHandler} className={styles.button}>

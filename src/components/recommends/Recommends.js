@@ -9,7 +9,10 @@ import result7 from "../../images/ענבל רוזנפלד תלמידות 7.png"
 import result8 from "../../images/ענבל רוזנפלד תלמידות 8.png"
 import result9 from "../../images/ענבל רוזנפלד תלמידות 9.png"
 import result10 from "../../images/ענבל רוזנפלד תלמידות 10.png"
-
+import result11 from "../../images/ענבל רוזנפלד המלצה 1.png"
+import result12 from "../../images/ענבל רוזנפלד המלצה 2.png"
+import result13 from "../../images/ענבל רוזנפלד המלצה 3.png"
+import result14 from "../../images/ענבל רוזנפלד המלצה 4.png"
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -53,6 +56,10 @@ const Recommends=()=>{
         },
         {
           type: 'image',
+          src: result11,
+        },
+        {
+          type: 'image',
           src: result2,
         },
         {
@@ -63,7 +70,10 @@ const Recommends=()=>{
           type: 'image',
           src: result4,
         }, 
-        
+        {
+          type: 'image',
+          src: result12,
+        },
         {
           type: 'image',
           src: result5,
@@ -74,7 +84,15 @@ const Recommends=()=>{
           },
           {
             type: 'image',
+            src: result13,
+          },
+          {
+            type: 'image',
             src: result7,
+          },
+          {
+            type: 'image',
+            src: result14,
           },
         ];  
 return <>
@@ -106,7 +124,7 @@ return <>
         </Slider>
       </div>
 
-<FormScreen title="הכל מתחיל כאן"/>
+<FormScreen title="השאירי פרטים כאן ואחזור אלייך בהקדם"/>
 </>
 
 

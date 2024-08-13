@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ScrollReveal from 'scrollreveal';
 import styles from "./Akordion.module.css"
 import Button from '../button/Button';
-function DropdownAccordion({ title, content }) {
+ function DropdownAccordion({ title, content }) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
@@ -19,11 +19,9 @@ function DropdownAccordion({ title, content }) {
             boxShadow: '0px 2px 5px 0px #333',
           width: "100%",
           margin: "auto",
-          background:"linear-gradient(135deg, #FEBCA6 0%, #FFF0EB 100%);",
-  
+          background:"linear-gradient(146deg, rgba(255,247,234,1) 20%, rgba(233,216,171,1) 50%, rgba(255,247,236,1) 80%)",
           display: "flex",
           flexDirection: "column",
-          
           justifyContent: "center",
           position: "relative",
           "&:before": {

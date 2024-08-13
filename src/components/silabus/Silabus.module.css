@@ -25,7 +25,7 @@
 }
 
 .akordion {
-    width: 50%;
+    width: 70%;
     margin: 3% auto;
 }
 
@@ -44,31 +44,40 @@
     font-weight: bold;
     color: #000000;
     margin-bottom: 15px;
+    justify-content: flex-start; /* Start from right side */
 }
 
 .courseTitle svg {
     margin-left: 10px;
 }
 
-.descriptionList {
+.descriptionList, .topicsList, .detailsList, .courseList {
     list-style-type: none;
     padding: 0;
 }
 
-.descriptionItem {
+.descriptionItem, .topicItem, .detailItem {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 15px;
+    text-align: right; /* Align text to the right */
 }
 
 .checkmark {
     color: #000000;
-    margin-left: 10px;
+    margin-left: 15px;
     font-weight: bold;
+    flex-shrink: 0; /* Prevent checkmark from shrinking */
+    width: 20px; /* Set a fixed width for consistent alignment */
+    text-align: center; /* Center the checkmark within its width */
+}
+
+.itemText {
+    flex-grow: 1; /* Allow text to take up remaining space */
 }
 
 .premiumSection {
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 5px;
     border-radius: 6px;
 }
@@ -95,6 +104,40 @@
     color: #333333;
 }
 
+/* Updated: Consistent icon size and positioning */
+.detailIcon {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    object-fit: contain;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.checkIcon {
+    margin-left: 15px;
+    color: #000000;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/* New: Added styles for premiumFeatures */
+.premiumFeatures {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.premiumFeatures p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 350px) {
     .title {
@@ -119,6 +162,14 @@
     .premiumSection {
         padding: 5px;
     }
+    .detailIcon {
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+    }
+    .checkIcon {
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {
@@ -140,6 +191,14 @@
     }
     .courseTitle {
         font-size: 1.1rem;
+    }
+    .detailIcon {
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+    }
+    .checkIcon {
+        margin-left: 12px;
     }
 }
 
@@ -177,6 +236,11 @@
     .courseContainer {
         width: 80%;
     }
+    .detailIcon {
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1050px) {
@@ -185,13 +249,18 @@
         width: 70%;
     }
     .description {
-        width: 70%;
+        width: 90%;
     }
     .akordion {
         width: 70%;
     }
     .courseContainer {
-        width: 70%;
+        width: 95%;
+    }
+    .detailIcon {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
     }
 }
 
