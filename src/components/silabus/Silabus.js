@@ -23,8 +23,25 @@ import icon5 from '../../images/withyou.png';
 import icon6 from '../../images/sun.png';
 import icon7 from '../../images/moon.png';
 import Button from '../button/Button';
-
+import levelUp from "../../images/קורס לבל אפ למתקדמות.png";
 const Silabus = () => {
+
+  const courseTopics4 = [
+    "קיצור זמנים באופן מיידי",
+    "הסרת ג׳ל בצורה נכונה",
+    "מניקור מכשירי בעזרת צבתית/מספריים",
+    "תיקון מבנה אנטומי מדויק ליצירת מראה מושלם",
+    "מריחה צמודה לקוטיקולה",
+   
+  ];
+
+  const courseDetails4 = [
+    { text: "5 שעות לימוד | מפגש 1", icon: icon1 },
+    { text: "קבלת תעודת מקצוע", icon: icon4 },
+    { text: "ליווי אישי לאחר ההשתלמות", icon: icon5 },
+    { text: "מסלול בוקר", icon: icon6 },
+    { text: "מסלול ערב", icon: icon7 }
+  ];
   const courseTopics = [
     "בניית ציפורניים בג׳ל בשני שיטות מתקדמות",
     "שיטות מניקור נכונות לכל סוגי הבנייה",
@@ -36,7 +53,7 @@ const Silabus = () => {
     "שיוף צורה סימטרית שקד/מרובע/בלרינה",
     "מניקור מכשירי בעזרת צבתית/מספריים",
     "מריחה צמודה לקוטיקולה",
-    "טיפים לצילום נכון לאינסטגרם",
+    
     "עבודה מעשית על מודליסטית"
   ];
 
@@ -62,7 +79,7 @@ const Silabus = () => {
     "מניקור מכשירי בעזרת צבתית/מספריים",
     "תיקון מבנה אנטומי מדויק",
     "מריחה צמודה לקוטיקולה",
-    "טיפים לצילום נכון לאינסטגרם",
+    
     "עבודה מעשית על מודליסטית"
   ];
 
@@ -89,7 +106,7 @@ const Silabus = () => {
     "מריחה צמודה לקוטיקולה",
     "בניית ציפורניים בג׳ל בשני שיטות מתקדמות",
     "שיטות מניקור נכונות לכל סוגי הבנייה",
-    "טיפים לצילום נכון לאינסטגרם",
+    
     "עבודה מעשית על מודליסטית"
   ];
 
@@ -196,7 +213,7 @@ const Silabus = () => {
 
   const NailItContent = () => (
     <div className={styles.courseContainer}>
-      <h3 className={styles.courseTitle}>קורס Nail It יקנה לכן את כל היסודות והמיומנויות הבסיסיות בתחום בדגש על בנייה בג׳ל:</h3>
+      <h3 className={styles.courseTitle}>קורס Nail It יקנה לכן את כל היסודות והמיומנויות בתחום בדגש על בנייה בג׳ל:</h3>
       <ul className={styles.topicsList}>
         {courseTopics.map((topic, index) => (
           <li key={index} className={styles.topicItem}>
@@ -317,6 +334,41 @@ const PremiumContent = () => {
     </div>
   );
 };
+ const LevelUpContent = () => {
+
+
+    return (
+      <div className={styles.courseContainer}>
+        <h3 className={styles.courseTitle}>רוצה להקפיץ את הרמה שלך בעיצוב ציפורניים? הגיע הזמן ל-Level Up</h3>
+        <p>קורס מתקדם זה מיועד למעצבות ציפורניים מקצועיות עם ניסיון קודם בעבודת ג'ל, המקבלות לקוחות באופן שוטף.</p>
+        <h4 className={styles.sectionTitle}>בקורס נרכוש כישורים מתקדמים לשיפור העבודה:</h4>
+        <ul className={styles.topicsList}>
+          {courseTopics4.map((topic, index) => (
+            <li key={index} className={styles.topicItem}>
+              <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} />
+              <span>{topic}</span>
+            </li>
+          ))}
+        </ul>
+
+        <h4 className={styles.sectionTitle}>היקף הקורס:</h4>
+        <ul className={styles.detailsList}>
+          {courseDetails4.map((detail, index) => (
+            <li key={index} className={styles.detailItem}>
+              <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+              <span>{detail.text}</span>
+            </li>
+          ))}
+        </ul>
+
+        <p className={styles.paymentOptions}>
+          אפשרויות תשלום: מזומן / העברה בנקאית
+        </p>
+        <Button text="קורס Level Up מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס Level Up"/>
+      </div>
+    );
+  };
+
 
   return (
     <Slider {...sliderSettings}>
@@ -331,6 +383,10 @@ const PremiumContent = () => {
       <DropdownAccordion 
         title={<BoxPlus image={premium} description="קורס PREMIUM"/>} 
         content={<PremiumContent />}
+      />
+          <DropdownAccordion 
+        title={<BoxPlus image={levelUp} description="קורס Level Up"/>} 
+        content={<LevelUpContent />}
       />
     </Slider>
   );

@@ -13,6 +13,13 @@ import result11 from "../../images/ענבל רוזנפלד המלצה 1.png"
 import result12 from "../../images/ענבל רוזנפלד המלצה 2.png"
 import result13 from "../../images/ענבל רוזנפלד המלצה 3.png"
 import result14 from "../../images/ענבל רוזנפלד המלצה 4.png"
+import result15 from "../../images/ענבל רוזנפלד תלמידות 11.png"
+import result16 from "../../images/ענבל רוזנפלד תלמידות 12.png"
+import result17 from "../../images/ענבל רוזנפלד תלמידות 13.png"
+
+import result18 from "../../images/ענבל רוזנפלד תלמידות 14.png"
+import result19 from "../../images/ענבל רוזנפלד תלמידות 15.png"
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -84,6 +91,10 @@ const Recommends=()=>{
           },
           {
             type: 'image',
+            src: result17,
+          },
+          {
+            type: 'image',
             src: result13,
           },
           {
@@ -92,7 +103,23 @@ const Recommends=()=>{
           },
           {
             type: 'image',
+            src: result16,
+          },
+          {
+            type: 'image',
             src: result14,
+          },
+          {
+            type: 'image',
+            src: result15,
+          },
+          {
+            type: 'image',
+            src: result18,
+          },
+          {
+            type: 'image',
+            src: result19,
           },
         ];  
 return <>
@@ -102,7 +129,7 @@ return <>
           {content.map((item, index) => (
             <div key={index} itemscope itemtype="http://schema.org/Review">
               {item.type === 'image' && (
-                <img src={item.src} className={styles.image1} alt={`עדי ממן לקוחה ממליצה מספר ${index + 1}`} itemprop="image"/>
+                <img src={item.src} className={styles.image1} alt={`ענבל רוזנפלד לקוחה ממליצה מספר ${index + 1}`} itemprop="image"/>
               )}
               {item.type === 'video' && (
                 <video

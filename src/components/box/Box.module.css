@@ -22,7 +22,13 @@
   margin: 3% auto;
   direction: rtl;
 
-  background: linear-gradient(146deg, rgb(96, 73, 40) 0%, rgb(77, 59, 33) 30%, rgb(84, 62, 31) 50%, rgb(71, 47, 12) 100%);
+  background: linear-gradient(135deg, 
+  #bba789,  /* בז' בהיר */
+  #b0946f,  /* חום בהיר (tan) */
+  #C19A6B,  /* חום בינוני */
+  #c1a882,  /* בז' חם (champagne) */
+  #E6BE8A   /* זהב עדין */
+);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

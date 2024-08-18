@@ -29,7 +29,18 @@
 .title {
   font-family: 'Assistant';
   font-size: 24px;
-  color: #4a3728;
+
+  background: linear-gradient(135deg, 
+  #bba789,  /* בז' בהיר */
+  #b0946f,  /* חום בהיר (tan) */
+  #C19A6B,  /* חום בינוני */
+  #c1a882,  /* בז' חם (champagne) */
+  #E6BE8A   /* זהב עדין */
+);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
   margin-right: 10px;
 }
 
@@ -42,6 +53,7 @@
   font-size: 18px;
   color: #6b5744;
   text-align: right;
+  direction: rtl;
 }
 
 /* Responsive styles */
