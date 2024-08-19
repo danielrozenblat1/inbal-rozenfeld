@@ -9,7 +9,21 @@
     padding-top: 5%;
     font-family: "Assistant";
 }
-
+.goldGradient {
+    background: linear-gradient(135deg, 
+      #bba789,  /* בז' בהיר */
+      #b0946f,  /* חום בהיר (tan) */
+      #C19A6B,  /* חום בינוני */
+      #c1a882,  /* בז' חם (champagne) */
+      #E6BE8A   /* זהב עדין */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    display: inline;
+    white-space: nowrap;
+}
 .description {
     color: rgb(0, 0, 0);
     justify-content: center;
@@ -38,15 +52,15 @@
 }
 
 .courseTitle {
-    display: flex;
-    align-items: center;
+    display: inline;
+    align-items: baseline;
     font-size: 1.2rem;
     font-weight: bold;
     color: #000000;
     margin-bottom: 15px;
     justify-content: flex-start; /* Start from right side */
+    flex-wrap: wrap;
 }
-
 .courseTitle svg {
     margin-left: 10px;
 }

@@ -213,7 +213,10 @@ const Silabus = () => {
 
   const NailItContent = () => (
     <div className={styles.courseContainer}>
-      <h3 className={styles.courseTitle}>קורס Nail It יקנה לכן את כל היסודות והמיומנויות בתחום בדגש על בנייה בג׳ל:</h3>
+        <h3 className={styles.courseTitle}>
+        קורס Nail It יקנה לכן את כל היסודות והמיומנויות בתחום{' '}
+        <span className={styles.goldGradient}>בדגש על בנייה בג׳ל:</span>
+      </h3>
       <ul className={styles.topicsList}>
         {courseTopics.map((topic, index) => (
           <li key={index} className={styles.topicItem}>
@@ -253,7 +256,10 @@ const Silabus = () => {
 
   return (
     <div className={styles.courseContainer}>
-      <h3 className={styles.courseTitle}>קורס Nail Master יקנה לכן את כל היסודות והמיומנויות המתקדמות בתחום הציפורניים:</h3>
+      <h3 className={styles.courseTitle}>
+        קורס Nail Master יקנה לכן את כל היסודות והמיומנויות המתקדמות בתחום הציפורניים{' '}
+        <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל:</span>
+      </h3>
       <ul className={styles.topicsList}>
         {courseTopics1.map((topic, index) => (
           <li key={index} className={styles.topicItem}>
@@ -294,7 +300,10 @@ const PremiumContent = () => {
 
   return (
     <div className={styles.courseContainer}>
-      <h3 className={styles.courseTitle}>קורס פרימיום חדש המאחד את 2 הקורסים לקורס אחד!</h3>
+    <h3 className={styles.courseTitle}>
+        קורס פרימיום חדש המאחד את 2 הקורסים לקורס אחד!{' '}
+        <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל ובנייה בג׳ל:</span>
+      </h3>
       <div className={styles.premiumFeatures}>
         <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> מניקור לק ג׳ל על ציפורניים טבעיות</p>
         <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> בנייה בג׳ל בשיטות המתקדמות ביותר</p>
@@ -339,8 +348,10 @@ const PremiumContent = () => {
 
     return (
       <div className={styles.courseContainer}>
-        <h3 className={styles.courseTitle}>רוצה להקפיץ את הרמה שלך בעיצוב ציפורניים? הגיע הזמן ל-Level Up</h3>
-        <p>קורס מתקדם זה מיועד למעצבות ציפורניים מקצועיות עם ניסיון קודם בעבודת ג'ל, המקבלות לקוחות באופן שוטף.</p>
+    <h3 className={styles.courseTitle}>
+        רוצה להקפיץ את הרמה שלך בעיצוב ציפורניים? הגיע הזמן ל-Level Up{' '}
+        <span className={styles.goldGradient}>בדגש על שיפור מיומנויות מתקדמות:</span>
+      </h3>
         <h4 className={styles.sectionTitle}>בקורס נרכוש כישורים מתקדמים לשיפור העבודה:</h4>
         <ul className={styles.topicsList}>
           {courseTopics4.map((topic, index) => (
