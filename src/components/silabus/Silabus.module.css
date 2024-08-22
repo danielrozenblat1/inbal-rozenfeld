@@ -21,8 +21,9 @@
     background-clip: text;
     color: transparent;
     text-shadow: none;
-    display: inline;
-    white-space: nowrap;
+display: inline-flex;
+ 
+  
 }
 .description {
     color: rgb(0, 0, 0);
@@ -52,7 +53,8 @@
 }
 
 .courseTitle {
-    display: inline;
+
+text-align: center;
     align-items: baseline;
     font-size: 1.2rem;
     font-weight: bold;
