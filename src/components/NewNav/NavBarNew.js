@@ -56,7 +56,7 @@ const NavBarNew = () => {
 
   const closeMenu = () => setIsMenuOpen(false);
 
-  const menuItems = ['תלמידות', 'מי אני', 'סילבוסים','צרי קשר' ];
+  const menuItems = [ 'קורסים','תלמידות','מי אני','צרי קשר','שאלות נפוצות','בונוסים' ];
 
   return (
     <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>

@@ -8,7 +8,7 @@ const FirstScreen=(props)=>{
    
 
 return <>
-<div className={props.scrolled?styles.descriptionP:styles.description}>תמיד חלמת להיות עצמאית? לנהל את הזמן שלך ולהפוך את החלום שלך לעסק מצליח ורווחי ?</div>
+<div className={props.scrolled?styles.descriptionP:styles.description}>תמיד חלמת להיות עצמאית? לנהל את הזמן שלך ולהפוך את החלום שלך לעסק מצליח ורווחי ? <br/> האקדמיה שלי כאן כדי להראות לך את הדרך!</div>
 
 {/* <div className={styles.center}><img className={styles.image} src={inbal} alt="ענבל רוזנפלד"/></div> */}
 <AboutMe/>

@@ -22,13 +22,14 @@ import icon4 from '../../images/certificate.png';
 import icon5 from '../../images/withyou.png';
 import icon6 from '../../images/sun.png';
 import icon7 from '../../images/moon.png';
+import icon8 from "../../images/מודליסטית.png"
 import Button from '../button/Button';
 import levelUp from "../../images/קורס לבל אפ למתקדמות.png";
 const Silabus = () => {
 
   const courseTopics4 = [
     "קיצור זמנים באופן מיידי",
-    "הסרת ג׳ל בצורה נכונה",
+    "הסרת לק ג׳ל בצורה נכונה",
     "מניקור מכשירי בעזרת צבתית/מספריים",
     "תיקון מבנה אנטומי מדויק ליצירת מראה מושלם",
     "מריחה צמודה לקוטיקולה",
@@ -39,11 +40,12 @@ const Silabus = () => {
     { text: "5 שעות לימוד | מפגש 1", icon: icon1 },
     { text: "קבלת תעודת מקצוע", icon: icon4 },
     { text: "ליווי אישי לאחר ההשתלמות", icon: icon5 },
-    { text: "מסלול בוקר", icon: icon6 },
-    { text: "מסלול ערב", icon: icon7 }
+    { text: "מסלול בוקר: 9:00-14:00", icon: icon6 },
+    { text: "מסלול ערב: 15:00-20:00", icon: icon7 },
+    { text: "עבודה מעשית על מודליסטית", icon: icon8 }
   ];
   const courseTopics = [
-    "בניית ציפורניים בג׳ל בשני שיטות מתקדמות",
+    "בניית ציפורניים בג׳ל בשיטות המתקדמות ביותר",
     "שיטות מניקור נכונות לכל סוגי הבנייה",
     "אנטומיה של מבנה הציפורן",
     "הכרה וטיפול במחלות נפוצות",
@@ -54,7 +56,7 @@ const Silabus = () => {
     "מניקור מכשירי בעזרת צבתית/מספריים",
     "מריחה צמודה לקוטיקולה",
     
-    "עבודה מעשית על מודליסטית"
+  
   ];
 
   const courseDetails = [
@@ -64,7 +66,8 @@ const Silabus = () => {
     { text: "קבלת תעודת מקצוע", icon: icon4 },
     { text: "ליווי אישי לאחר הקורס", icon: icon5 },
     { text: "מסלול בוקר: 09:00-14:00", icon: icon6 },
-    { text: "מסלול ערב: 15:00-20:00", icon: icon7 }
+    { text: "מסלול ערב: 15:00-20:00", icon: icon7 },
+    { text: "עבודה מעשית על מודליסטית", icon: icon8 }
   ];
 
 
@@ -80,7 +83,7 @@ const Silabus = () => {
     "תיקון מבנה אנטומי מדויק",
     "מריחה צמודה לקוטיקולה",
     
-    "עבודה מעשית על מודליסטית"
+  
   ];
 
   const courseDetails1 = [
@@ -90,7 +93,8 @@ const Silabus = () => {
     { text: "קבלת תעודת מקצוע", icon: icon4 },
     { text: "ליווי אישי לאחר הקורס", icon: icon5 },
     { text: "מסלול בוקר: 09:00-14:00", icon: icon6 },
-    { text: "מסלול ערב: 15:00-20:00", icon: icon7 }
+    { text: "מסלול ערב: 15:00-20:00", icon: icon7 },
+    { text: "עבודה מעשית על מודליסטית", icon: icon8 }
   ];
 
 
@@ -104,20 +108,20 @@ const Silabus = () => {
     "מניקור מכשירי בעזרת צבתית/מספריים",
     "תיקון מבנה אנטומי מדויק",
     "מריחה צמודה לקוטיקולה",
-    "בניית ציפורניים בג׳ל בשני שיטות מתקדמות",
+    "בניית ציפורניים בג׳ל בשיטות המתקדמות ביותר",
     "שיטות מניקור נכונות לכל סוגי הבנייה",
     
-    "עבודה מעשית על מודליסטית"
   ];
 
   const courseDetails2 = [
-    { text: "20 שעות לימוד | 4 מפגשים | 5 שעות כל שיעור", icon: icon1 },
+    { text: "20 שעות לימוד | 4 מפגשים 5 שעות כל שיעור", icon: icon1 },
     { text: "כיתת לימוד פרטנית עד 2 תלמידות", icon: icon2 },
     { text: "שיעורי בית פרקטיים לאחר כל מפגש", icon: icon3 },
     { text: "קבלת תעודת מקצוע", icon: icon4 },
     { text: "ליווי אישי לאחר הקורס", icon: icon5 },
     { text: "מסלול בוקר: 09:00-14:00", icon: icon6 },
-    { text: "מסלול ערב: 15:00-20:00", icon: icon7 }
+    { text: "מסלול ערב: 15:00-20:00", icon: icon7 },
+    { text: "עבודה מעשית על מודליסטית", icon: icon8 }
   ];
 
   function DropdownAccordion({ title, content }) {
@@ -302,7 +306,7 @@ const PremiumContent = () => {
     <div className={styles.courseContainer}>
     <h3 className={styles.courseTitle}>
         קורס פרימיום חדש המאחד את 2 הקורסים לקורס אחד!{' '}
-        <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל ובנייה בג׳ל:</span>
+        <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל  <br/> ובנייה בג׳ל:</span>
       </h3>
       <div className={styles.premiumFeatures}>
         <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> מניקור לק ג׳ל על ציפורניים טבעיות</p>
@@ -349,10 +353,11 @@ const PremiumContent = () => {
     return (
       <div className={styles.courseContainer}>
     <h3 className={styles.courseTitle}>
-        רוצה להקפיץ את הרמה שלך בעיצוב ציפורניים? הגיע הזמן ל-Level Up{' '}
+    כבר עברת קורס בתחום? את מקבלת לקוחות על בסיס יום יומי ועדיין לא מרגישה שזה מושלם?
+או שאת רוצה להקפיץ את הרמה שלך ?
         <span className={styles.goldGradient}>בדגש על שיפור מיומנויות מתקדמות:</span>
       </h3>
-        <h4 className={styles.sectionTitle}>בקורס נרכוש כישורים מתקדמים לשיפור העבודה:</h4>
+        <h4 className={styles.sectionTitle}>הגיע הזמן להשתלמות  LEVEL UP</h4>
         <ul className={styles.topicsList}>
           {courseTopics4.map((topic, index) => (
             <li key={index} className={styles.topicItem}>
@@ -373,7 +378,7 @@ const PremiumContent = () => {
         </ul>
 
         <p className={styles.paymentOptions}>
-          אפשרויות תשלום: מזומן / העברה בנקאית
+          אפשרויות תשלום: מזומן / העברה בנקאית / אשראי
         </p>
         <Button text="קורס Level Up מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס Level Up"/>
       </div>
@@ -384,19 +389,19 @@ const PremiumContent = () => {
   return (
     <Slider {...sliderSettings}>
       <DropdownAccordion 
-        title={<BoxPlus image={nailIt} description="קורס NAIL IT"/>} 
+        title={<BoxPlus image={nailIt} description="קורס NAIL IT למתחילות"/>} 
         content={<NailItContent />}
       />
       <DropdownAccordion 
-        title={<BoxPlus image={nailMaster} description="קורס NAIL MASTER"/>} 
+        title={<BoxPlus image={nailMaster} description="קורס NAIL MASTER למתחילות"/>} 
         content={<NailMasterContent />}
       />
       <DropdownAccordion 
-        title={<BoxPlus image={premium} description="קורס PREMIUM"/>} 
+        title={<BoxPlus image={premium} description="קורס PREMIUM למתחילות"/>} 
         content={<PremiumContent />}
       />
           <DropdownAccordion 
-        title={<BoxPlus image={levelUp} description="קורס Level Up"/>} 
+        title={<BoxPlus image={levelUp} description="קורס Level Up למתקדמות"/>} 
         content={<LevelUpContent />}
       />
     </Slider>
