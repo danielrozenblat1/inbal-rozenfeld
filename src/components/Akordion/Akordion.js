@@ -116,7 +116,7 @@ export default function BasicAccordion() {
       <div className={styles.description}>לכל מי שרוצה לצאת לעצמאות כלכלית וחולמת להגשים את עצמה</div>
       <div className={styles.description}>לכל מי שמעוניינת להתעסק בתחום הציפורניים ולהצליח בגדול</div>
       <div className={styles.description}>מתחילות ללא ניסיון שרוצות וחולמות להגיע לרמה המקצועית הגבוהה ביותר</div>
-      <div className={styles.description}>לכל מי שרוצה ללצאת לדרך עצמאית וללא בוס על הראש</div>
+      <div className={styles.description}>לכל מי שרוצה לצאת לדרך עצמאית וללא בוס על הראש</div>
       <div className={styles.description}>למי שרוצה לנהל את הלו"ז שהיא בוחרת לעצמה ועם הלקוחות שהיא בוחרת לעבוד מולן</div>
 
     </>} />
