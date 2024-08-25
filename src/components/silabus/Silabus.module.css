@@ -22,9 +22,8 @@
     color: transparent;
     text-shadow: none;
 display: inline-flex;
- 
-  
 }
+
 .description {
     color: rgb(0, 0, 0);
     justify-content: center;
