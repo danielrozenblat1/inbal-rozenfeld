@@ -60,7 +60,7 @@ const WhoFits = () => {
           </div>
         </div>
       </div>
-    
+    <Button text="ענבל זה נשמע לי מתאים"/>
     </>
   )
 }

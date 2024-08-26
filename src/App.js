@@ -41,9 +41,9 @@ function App() {
   <NavBarNew/>
   <FirstScreen scrolled={scrolled}/>
   <SecondScreen/>
-
-  <ThirdScreen/>
   <WhoFits/>
+  <ThirdScreen/>
+  
   <FormScreen title="הכל מתחיל בקבלת החלטה!"/>
   <BasicAccordion/>
  {/* <ForthScreen/> */}

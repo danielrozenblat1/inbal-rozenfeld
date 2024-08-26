@@ -22,10 +22,10 @@
   
   .image {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -44,6 +44,6 @@
     }
   
     .image {
-      max-width: 250px;
+      max-width: 150px;
     }
   }
