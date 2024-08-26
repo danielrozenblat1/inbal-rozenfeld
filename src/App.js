@@ -10,6 +10,9 @@ import { useEffect, useState } from 'react';
 import ByMe from './components/ByMe/ByMe';
 import ForthScreen from './screens/ForthScreen';
 import Silabus from './components/silabus/Silabus';
+import Location from './screens/Place';
+import WhoFits from './components/fit/WhoFits';
+import FormScreen from './components/form/FormScreen';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,8 +43,11 @@ function App() {
   <SecondScreen/>
 
   <ThirdScreen/>
+  <WhoFits/>
+  <FormScreen title="הכל מתחיל בקבלת החלטה!"/>
   <BasicAccordion/>
  {/* <ForthScreen/> */}
+ <Location/>
   <ByMe/>
   </div>
   </>

@@ -112,14 +112,14 @@ export default function BasicAccordion() {
       {/* Center parent container */}
      
     <div className={styles.title} id="שאלות נפוצות" itemProp="mainEntity" itemScope itemType="https://schema.org/WebPage">שאלות נפוצות</div>
-    <DropdownAccordion title="למי זה מתאים?" content={<>
+    {/* <DropdownAccordion title="למי זה מתאים?" content={<>
       <div className={styles.description}>לכל מי שרוצה לצאת לעצמאות כלכלית וחולמת להגשים את עצמה</div>
       <div className={styles.description}>לכל מי שמעוניינת להתעסק בתחום הציפורניים ולהצליח בגדול</div>
       <div className={styles.description}>מתחילות ללא ניסיון שרוצות וחולמות להגיע לרמה המקצועית הגבוהה ביותר</div>
       <div className={styles.description}>לכל מי שרוצה לצאת לדרך עצמאית וללא בוס על הראש</div>
       <div className={styles.description}>למי שרוצה לנהל את הלו"ז שהיא בוחרת לעצמה ועם הלקוחות שהיא בוחרת לעבוד מולן</div>
 
-    </>} />
+    </>} /> */}
     <DropdownAccordion title="אין לי נסיון בכלל בתחום, זה עדיין רלוונטי עבורי?" content="ברור! את לא חייבת נסיון בכלל! אבל את כן חייבת לאהוב את התחום ולהיות עם מוטיבציה ורצון להצליח בו!" />
     <DropdownAccordion title="מה אם אני לא אצליח בזה?" content="ההצלחה שלך תלויה ברצון ובהתמדה שלך, ואני כאן כדי לוודא שאת לא נשארת לבד בתהליך הזה. כל שלב בקורס מלווה בהדרכה צמודה ותמיכה אישית, כדי שתוכלי לצלוח כל אתגר." />
     <DropdownAccordion title="כולן עובדות בזה, למה שיגיעו דווקא אליי?" content="כל אחת מביאה משהו מיוחד – הכישרון שלך, הגישה שלך והיחס שלך ללקוחות יהיו הייחודיות שלך. בקורס, אלמד אותך לא רק את הטכניקות אלא גם איך לבנות את המותג האישי שלך, כדי שתבלטי בתחום ותמשכי את הלקוחות שמתאימים לך." />

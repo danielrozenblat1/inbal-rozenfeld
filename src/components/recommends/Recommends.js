@@ -151,7 +151,7 @@ return <>
         </Slider>
       </div>
       <div className={styles.explain} >ההכשרה שלך היא זו שתגדיר אותך כעוד אחת שסיימה קורס מקצועי או כמקצוענית חסרת פשרות</div>
-<FormScreen title="הכל מתחיל בקבלת החלטה!"/>
+
 </>
 
 
