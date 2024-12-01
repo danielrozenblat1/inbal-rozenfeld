@@ -244,8 +244,8 @@ const Silabus = () => {
         <h3 className={styles.premiumTitle}>בנוסף תקבלי</h3>
         <h3 className={styles.premiumTitle}>ערכת PREMIUM במחיר מיוחד עבורך:</h3>
         <p>במסגרת הצטרפותך לקורס תוכלי להנות מהטבה מיוחדת לרכישת ערכת לימוד מפוארת של מותגים מובילים המכילה את כל מה שאת צריכה לתחילת דרכך.</p>
-        <p>שווי הערכה: <span className={styles.originalPrice}>3,000 ש"ח</span></p>
-        <p className={styles.discountedPrice}>בשבילך: 2,000 ש"ח</p>
+        <p>שווי הערכה: <span className={styles.originalPrice}>3,500 ש"ח</span></p>
+        <p className={styles.discountedPrice}>בשבילך: 2,500 ש"ח</p>
       </div>
 
       <p className={styles.paymentOptions}>
@@ -287,8 +287,8 @@ const Silabus = () => {
         <h3 className={styles.premiumTitle}>בנוסף תקבלי</h3>
         <h3 className={styles.premiumTitle}>ערכת PREMIUM במחיר מיוחד עבורך:</h3>
         <p>במסגרת הצטרפותך לקורס תוכלי להנות מהטבה מיוחדת לרכישת ערכת לימוד מפוארת של מותגים מובילים המכילה את כל מה שאת צריכה לתחילת דרכך.</p>
-        <p>שווי הערכה: <span className={styles.originalPrice}>3,000 ש"ח</span></p>
-        <p className={styles.discountedPrice}>בשבילך: 2,000 ש"ח</p>
+        <p>שווי הערכה: <span className={styles.originalPrice}>3,500 ש"ח</span></p>
+        <p className={styles.discountedPrice}>בשבילך: 2,500 ש"ח</p>
       </div>
 
       <p className={styles.paymentOptions}>
@@ -336,8 +336,8 @@ const PremiumContent = () => {
         <h3 className={styles.premiumTitle}>בנוסף תקבלי</h3>
         <h3 className={styles.premiumTitle}>ערכת PREMIUM במחיר מיוחד עבורך:</h3>
         <p>במסגרת הצטרפותך לקורס תוכלי להנות מהטבה מיוחדת לרכישת ערכת לימוד מפוארת של מותגים מובילים המכילה את כל מה שאת צריכה לתחילת דרכך.</p>
-        <p>שווי הערכה: <span className={styles.originalPrice}>3,000 ש"ח</span></p>
-        <p className={styles.discountedPrice}>בשבילך: 2,000 ש"ח</p>
+        <p>שווי הערכה: <span className={styles.originalPrice}>3,500 ש"ח</span></p>
+        <p className={styles.discountedPrice}>בשבילך: 2,500 ש"ח</p>
       </div>
 
       <p className={styles.paymentOptions}>
