@@ -41,7 +41,7 @@ const NavBarNew = () => {
   }, []);
 
   const handleClick = () => {
-    const phoneNumber = "+972533393035";
+    const phoneNumber = "+972507277977";
     const message ="היי ענבל ,אני רוצה לשמוע ממך עוד על..";
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
