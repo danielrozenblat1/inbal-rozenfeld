@@ -1,0 +1,63 @@
+.center{
+    display: flex;
+    justify-content: center;
+    margin:2% auto;
+}
+.button {
+  background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+    border: none;
+    color: #412500;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-family: "Assistant";
+    direction: rtl;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #D2B48C,  /* חום בהיר (tan) */
+    #C19A6B,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #E6BE8A   /* זהב עדין */
+  );
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:active {
+    background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #D2B48C,  /* חום בהיר (tan) */
+    #C19A6B,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #E6BE8A   /* זהב עדין */
+  );
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+  }
+  @media screen and (max-width: 350px) {
+
+    .button {
+
+      font-size: 1rem;
+    }
+  }
+  @media screen  and (min-width: 350px) and (max-width: 450px)  {
+
+    .button {
+
+      font-size: 1.1rem;
+    }
+  }

@@ -1,0 +1,109 @@
+.container {
+  background: none;
+  border-radius: 30px 30px 30px 0px;
+
+  padding: 10px 20px;
+  position: relative;
+  width: 300px;
+  margin:15px auto;
+  height: auto;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+/* שאר הקוד נשאר ללא שינוי */
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  /* background:linear-gradient(135deg, #d2b48c, #f5deb3, #f5deb3); */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: 'Assistant';
+  font-size: 24px;
+
+  background: linear-gradient(135deg, 
+  #bba789,  /* בז' בהיר */
+  #b0946f,  /* חום בהיר (tan) */
+  #C19A6B,  /* חום בינוני */
+  #c1a882,  /* בז' חם (champagne) */
+  #E6BE8A   /* זהב עדין */
+);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 30%;
+}
+
+.description {
+  font-family: 'AssistantR';
+  font-size: 18px;
+  color: #6b5744;
+  text-align: right;
+  direction: rtl;
+}
+
+/* Responsive styles */
+@media (max-width: 350px) {
+  .container {
+      width: 80%;
+      padding: 8px 15px;
+      border-radius: 20px 20px 20px 0px;
+  }
+  .title {
+      font-size: 20px;
+  }
+  .icon {
+      width: 25%;
+  }
+  .description {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .container {
+      width: 80%;
+      padding: 9px 18px;
+  }
+  .title {
+      font-size: 22px;
+  }
+  .icon {
+      width: 28%;
+  }
+  .description {
+      font-size: 17px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .container {
+      width: 75%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+  .container {
+      width: 65%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  .container {
+      width: 50%;
+  }
+}

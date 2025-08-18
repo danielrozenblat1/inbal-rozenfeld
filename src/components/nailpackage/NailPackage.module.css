@@ -1,0 +1,149 @@
+.accordionContainer {
+    width: 100%;
+
+    margin: 0 auto;
+  }
+  
+  .accordionItem {
+    margin-bottom: 20px;
+    margin:4%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right, 
+    #f8f0d7 0%,    /* זהב בהיר מאוד ועדין */
+    #f1e3b5 50%,   /* זהב עדין */
+    #e8d6a7 100%   /* חום-זהב עדין */
+);
+  }
+  
+  .accordionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+  }
+  
+  .title {
+    font-family: 'Assistant';
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .center {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .expandIcon {
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .expandIcon.rotated {
+    transform: rotate(180deg);
+  }
+  
+  .accordionContent {
+    padding: 0 30px 30px;
+  }
+  
+  .courseContent {
+    font-family: 'AssistantR';
+    font-size: 18px;
+    color: #555555;
+    text-align: center;
+    direction: rtl;
+    margin: 30px 0;
+    line-height: 1.6;
+  }
+  
+  .courseList {
+    list-style-type: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: center;
+  }
+  
+  .courseList li {
+    padding: 10px 0;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .courseList li::before {
+    content: "✓";
+    color: #000000;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 350px) {
+    .accordionContainer {
+      max-width: 85%;
+    }
+    .accordionHeader, .accordionContent {
+      padding: 15px;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .courseContent, .courseList li {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 350px) and (max-width: 450px) {
+    .accordionContainer {
+      max-width: 85%;
+    }
+    .accordionHeader, .accordionContent {
+      padding: 20px;
+    }
+    .title {
+      font-size: 26px;
+    }
+  }
+  
+  @media (min-width: 450px) and (max-width: 550px) {
+    .accordionContainer {
+      max-width: 80%;
+    }
+    .title {
+      font-size: 28px;
+    }
+    .courseContent, .courseList li {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 650px) {
+    .accordionContainer {
+      max-width: 400px;
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 650px) {
+    .accordionContainer {
+      max-width: 550px;
+    }
+  }
+  

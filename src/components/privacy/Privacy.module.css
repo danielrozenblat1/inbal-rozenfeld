@@ -1,0 +1,269 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    direction: rtl;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .closeButton {
+    position: fixed;
+    background: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+  
+  .content {
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .sectionTitle {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section li {
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  /* Responsive Breakpoints */
+  
+  /* מתחת ל-350 */
+  @media (max-width: 350px) {
+    .modal {
+      width: 300px;
+      padding: 1rem;
+    }
+    .closeButton {
+      top: 5vh;
+      left: calc(50% - 150px - 20px);
+    }
+    .title {
+      font-size: 1.2rem;
+    }
+    .sectionTitle {
+      font-size: 1rem;
+    }
+  }
+  
+  /* 350-450 */
+  @media (min-width: 351px) and (max-width: 450px) {
+    .modal {
+      width: 320px;
+      padding: 1.2rem;
+    }
+    .closeButton {
+      top: 6vh;
+      left: calc(50% - 160px - 20px);
+    }
+    .title {
+      font-size: 1.3rem;
+    }
+    .sectionTitle {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* 450-550 */
+  @media (min-width: 451px) and (max-width: 550px) {
+    .modal {
+      width: 380px;
+      padding: 1.3rem;
+    }
+    .closeButton {
+      top: 7vh;
+      left: calc(50% - 190px - 20px);
+    }
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* 550-650 */
+  @media (min-width: 551px) and (max-width: 650px) {
+    .modal {
+      width: 420px;
+      padding: 1.4rem;
+    }
+    .closeButton {
+      top: 7vh;
+      left: calc(50% - 210px - 20px);
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* 650-750 */
+  @media (min-width: 651px) and (max-width: 750px) {
+    .modal {
+      width: 460px;
+      padding: 1.5rem;
+    }
+    .closeButton {
+      top: 8vh;
+      left: calc(50% - 230px - 20px);
+    }
+    .title {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* 750-850 */
+  @media (min-width: 751px) and (max-width: 850px) {
+    .modal {
+      width: 500px;
+      padding: 1.6rem;
+    }
+    .closeButton {
+      top: 8vh;
+      left: calc(50% - 250px - 20px);
+    }
+    .title {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* 850-950 */
+  @media (min-width: 851px) and (max-width: 950px) {
+    .modal {
+      width: 540px;
+      padding: 1.7rem;
+    }
+    .closeButton {
+      top: 8vh;
+      left: calc(50% - 270px - 20px);
+    }
+    .title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* 950-1050 */
+  @media (min-width: 951px) and (max-width: 1050px) {
+    .modal {
+      width: 580px;
+      padding: 1.8rem;
+    }
+    .closeButton {
+      top: 9vh;
+      left: calc(50% - 290px - 20px);
+    }
+    .title {
+      font-size: 1.9rem;
+    }
+  }
+  
+  /* 1050-1150 */
+  @media (min-width: 1051px) and (max-width: 1150px) {
+    .modal {
+      width: 620px;
+      padding: 1.9rem;
+    }
+    .closeButton {
+      top: 9vh;
+      left: calc(50% - 310px - 20px);
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* 1150-1250 */
+  @media (min-width: 1151px) and (max-width: 1250px) {
+    .modal {
+      width: 660px;
+      padding: 2rem;
+    }
+    .closeButton {
+      top: 10vh;
+      left: calc(50% - 330px - 20px);
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* מעל 1250 */
+  @media (min-width: 1251px) {
+    .modal {
+      width: 700px;
+      padding: 2rem;
+    }
+    .closeButton {
+      top: 10vh;
+      left: calc(50% - 350px - 20px);
+    }
+  }
+  
+  /* Scrollbar Styling */
+  .modal::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+  }
