@@ -1,0 +1,320 @@
+/* CSS הראשון - לגדלי מחשב (רגיל) */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.heroContainerP{
+      display: flex;
+  flex-direction: column;
+
+  padding-top: 80px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.contentWrapper {
+  display: flex;
+  margin-top: 2%;
+  flex-direction: row; 
+  min-height: 60vh;
+  width: 100%;
+  justify-content: center; /* מרכז את התוכן */
+}
+
+/* אזור התוכן */
+.contentSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* מרכז טקסט */
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px; /* הגבלת רוחב מקסימלי */
+}
+
+.bgBlur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blurCircle1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 184, 65, 0.08) 0%, rgba(27, 42, 65, 0) 70%);
+  right: -100px;
+  top: -150px;
+  filter: blur(60px);
+}
+
+.blurCircle2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: -50px;
+  bottom: -100px;
+  filter: blur(70px);
+  background: radial-gradient(circle, rgba(245, 184, 65, 0.06) 0%, rgba(27, 42, 65, 0) 70%);
+}
+
+.textContent {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 50px 40px 0;
+  position: relative;
+  z-index: 1;
+  text-align: center; /* מרכז טקסט */
+}
+
+/* כותרת */
+.title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, 
+    #bba789,  /* בז' בהיר */
+    #b0946f,  /* חום בהיר (tan) */
+    #C19A6B,  /* חום בינוני */
+    #c1a882,  /* בז' חם (champagne) */
+    #E6BE8A   /* זהב עדין */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* תיאור */
+.description {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.5rem;
+
+  margin-bottom: 0.7rem;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.descriptionB {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.5rem;
+
+  margin-bottom: 0.3rem;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+/* תיאור מודגש */
+.highlightedDescription {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.5rem;
+text-decoration: underline;
+  margin-bottom: 0;
+  color: #000000;
+  position: relative;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* אזור הטופס */
+.formSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 40px 20px;
+  position: relative;
+}
+
+/* Media Queries - CSS השני לגדלים קטנים */
+
+/* Below 1250px */
+@media screen and (max-width: 1250px) {
+  .contentWrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    overflow: visible;
+    margin-top: 0;
+  }
+  
+  .contentSection {
+    z-index: 2;
+  }
+  
+  .blurCircle2 {
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(245, 184, 65, 0.06) 0%, rgba(27, 42, 65, 0) 70%);
+    left: -150px;
+    bottom: -200px;
+    filter: blur(80px);
+  }
+  
+  .textContent {
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 3;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description,
+  .descriptionB,
+  .highlightedDescription {
+    font-size: 1.2rem;
+    margin-top:0.1rem
+  }
+  
+  .formSection {
+    padding: 0 20px 30px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* 850px - 950px */
+@media screen and (max-width: 850px) {
+  .contentWrapper {
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  
+  .contentSection {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .textContent {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .formSection {
+    padding: 0 20px 25px 20px;
+  }
+}
+
+/* 750px - 850px */
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  
+  .textContent {
+    padding: 25px 15px;
+  }
+  
+  .formSection {
+    padding: 0 20px 35px 20px;
+  }
+}
+
+/* 650px - 750px */
+@media screen and (max-width: 650px) {
+  .heroContainer {
+    padding-top: 2vh;
+  }
+  
+  .contentWrapper {
+    padding-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .formSection {
+    padding: 0 20px 30px 20px;
+  }
+}
+
+/* 550px - 650px */
+@media screen and (max-width: 550px) {
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .textContent {
+    padding: 20px 10px;
+  }
+  
+  .formSection {
+    padding: 0 15px 25px 15px;
+  }
+}
+
+/* 450px - 550px */
+@media screen and (max-width: 450px) {
+  .heroContainer {
+    padding-top: 0.5vh;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .textContent {
+    padding: 0 8px;
+  }
+  
+  .formSection {
+    padding: 0 15px 30px 15px;
+  }
+}
+
+/* 350px - 450px */
+@media screen and (max-width: 350px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .textContent {
+    padding: 10px 5px;
+  }
+  
+  .formSection {
+    padding: 0 10px 25px 10px;
+  }
+}

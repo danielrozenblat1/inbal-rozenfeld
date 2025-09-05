@@ -69,7 +69,7 @@ const FormScreen = (props) => {
 
   return (
     <>
-      <div className={styles.title} id="צרי קשר">{props.title}</div>
+ 
       
       <div className={styles.formContainer}>
         <form className={styles.form}>
@@ -128,7 +128,7 @@ const FormScreen = (props) => {
           </div>
           
           <button onClick={submitHandler} className={styles.button}>
-            ענבל, בואי נדבר!
+        לחצי כאן ונדבר!
           </button>
         </form>
       </div>

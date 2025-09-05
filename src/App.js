@@ -14,6 +14,8 @@ import Location from './screens/Place';
 import WhoFits from './components/fit/WhoFits';
 import FormScreen from './components/form/FormScreen';
 import PrivacyPolicy from './components/privacy copy/Privacy';
+import FloatingWhatsAppButton from './components/FloatingButton/FloatingButton';
+import HeroSection from './screens/FirstScreenNew';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,8 +41,9 @@ function App() {
   };
   return <>
   <div class="app">
-  <NavBarNew/>
-  <FirstScreen scrolled={scrolled}/>
+  <NavBarNew />
+  <HeroSection scrolled={scrolled}/>
+  <FirstScreen />
   <SecondScreen/>
   <WhoFits/>
   <ThirdScreen/>
@@ -49,6 +52,7 @@ function App() {
   <BasicAccordion/>
  {/* <ForthScreen/> */}
  <Location/>
+ <FloatingWhatsAppButton/>
       <PrivacyPolicy
                   ownerName="ענבל רוזנפלד"
                   email="inbal.rozenfeld@gmail.com"
