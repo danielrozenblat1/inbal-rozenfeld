@@ -16,6 +16,7 @@ import FormScreen from './components/form/FormScreen';
 import PrivacyPolicy from './components/privacy copy/Privacy';
 import FloatingWhatsAppButton from './components/FloatingButton/FloatingButton';
 import HeroSection from './screens/FirstScreenNew';
+import Recommends from './components/recommends/Recommends';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,6 +46,7 @@ function App() {
   <HeroSection scrolled={scrolled}/>
   <FirstScreen />
   <SecondScreen/>
+      
   <WhoFits/>
   <ThirdScreen/>
   

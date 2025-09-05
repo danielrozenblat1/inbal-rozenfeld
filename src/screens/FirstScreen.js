@@ -3,6 +3,8 @@ import inbal from "../images/ענבל רוזנפלד.png"
 
 import FormScreen from "../components/form/FormScreen"
 import AboutMe from "../components/me/Me"
+import Recommends from "../components/recommends/Recommends"
+import Works from "../components/recommends/Works"
 
 const FirstScreen=(props)=>{
    
@@ -12,6 +14,7 @@ return <>
 
 {/* <div className={styles.center}><img className={styles.image} src={inbal} alt="ענבל רוזנפלד"/></div> */}
 <AboutMe/>
+    <Works/>
 {/* <h1 className={styles.title}>ענבל רוזנפלד</h1>
 <h2 className={styles.job}>קורס לק ג׳ל | בנייה בג׳ל | השתלמויות</h2> */}
 

@@ -16,7 +16,7 @@ const HeroSection = (props) => {
           <div className={styles.textContent}>
             {/* פסקת תיאור */}
             <p className={styles.descriptionB}>
-        תמיד אהבת את תחום הציפורניים וחלמת להתפרנס ממנו?
+         אוהבת את תחום הציפורניים וחולמת להתפרנס ממנו?
             </p>
             
             {/* כותרת ראשית */}

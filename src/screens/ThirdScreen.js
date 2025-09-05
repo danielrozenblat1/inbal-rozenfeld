@@ -45,7 +45,7 @@ const ThirdScreen = () => {
             number="06"
         />
         </div>
-        <Recommends/>
+
 
     </>
 }

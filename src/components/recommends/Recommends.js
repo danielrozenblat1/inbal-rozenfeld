@@ -123,7 +123,7 @@ const Recommends=()=>{
           },
         ];  
 return <>
-<div className={styles.title} id="תלמידות">וכמובן שתקבלי ממני תעודה מקצועית כמו הבנות הבאות..</div>
+<div className={styles.title} id="תלמידות"></div>
 <div className={styles.sliderContainer}>
         <Slider {...sliderSettings}>
           {content.map((item, index) => (
@@ -150,7 +150,7 @@ return <>
           ))}
         </Slider>
       </div>
-      <div className={styles.explain} >ההכשרה שלך היא זו שתגדיר אותך כעוד אחת שסיימה קורס מקצועי או כמקצוענית חסרת פשרות</div>
+      {/* <div className={styles.explain} >ההכשרה שלך היא זו שתגדיר אותך כעוד אחת שסיימה קורס מקצועי או כמקצוענית חסרת פשרות</div> */}
 
 </>
 

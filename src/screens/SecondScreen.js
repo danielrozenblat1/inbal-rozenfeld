@@ -15,7 +15,7 @@ const SecondScreen=()=>{
 
     return <>
         <strong><div className={styles.description}>תמיד אני אומרת לתלמידות שלי שכשאני למדתי הלוואי והיה לי אותי!</div></strong> 
-        <div className={styles.title}>גם אני הייתי שם</div>
+        <div className={styles.title}>כי גם אני הייתי שם</div>
         <div className={styles.description}>אני מבינה איך זה מרגיש להיות על סף קבלת החלטה שמרגישה גדולה ומפחידה</div>
         <div className={styles.description}>אבל אני יכולה להבטיח לך שהשקעה בעצמך היא הדרך הבטוחה ל</div>
         <div className={styles.row}>
