@@ -19,11 +19,20 @@ import result17 from "../../images/ענבל רוזנפלד תלמידות 13.png
 
 import result18 from "../../images/ענבל רוזנפלד תלמידות 14.png"
 import result19 from "../../images/ענבל רוזנפלד תלמידות 15.png"
-
+import result20 from "../../images/ענבל רוזנפלד עם תלמידות 1.png"
+import result21 from "../../images/ענבל רוזנפלד עם תלמידות 2.png"
+import result22 from "../../images/ענבל רוזנפלד עם תלמידות 3.png"
+import result23 from "../../images/ענבל רוזנפלד עם תלמידות 4.png"
+import result24 from "../../images/ענבל רוזנפלד עם תלמידות 5.png"
+import result25 from "../../images/ענבל רוזנפלד עם תלמידות 6.png"
+import result26 from "../../images/ענבל דוגמאות לציפורניים 1.png"
+import result27 from "../../images/ענבל דוגמאות לציפורניים 2.png"
+import result28 from "../../images/ענבל דוגמאות לציפורניים 3.png"
+import result29 from "../../images/ענבל דוגמאות לציפורניים 4.png"
 const Works = () => {
   const images = [
-    result1, result2, 
-    result7, result8, result9,  result11 ,result12, result13, result14, result15, result16, result17, result19, result18
+    result1, result2, , result20, result23, result24,result25, result26,
+    result7, result8, result9, result27,result28,result29, result11 , result21,result12,  result22,result13, result14, result15,result25, result16, result17, result19, result18
   ];
 
   return (

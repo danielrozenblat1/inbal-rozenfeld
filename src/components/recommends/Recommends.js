@@ -16,6 +16,12 @@ import result17 from "../../images/ענבל רוזנפלד תלמידות 13.png
 
 import result18 from "../../images/ענבל רוזנפלד תלמידות 14.png"
 import result19 from "../../images/ענבל רוזנפלד תלמידות 15.png"
+import result20 from "../../images/ענבל רוזנפלד עם תלמידות 1.png"
+import result21 from "../../images/ענבל רוזנפלד עם תלמידות 2.png"
+import result22 from "../../images/ענבל רוזנפלד עם תלמידות 3.png"
+import result23 from "../../images/ענבל רוזנפלד עם תלמידות 4.png"
+import result24 from "../../images/ענבל רוזנפלד עם תלמידות 5.png"
+import result25 from "../../images/ענבל רוזנפלד עם תלמידות 6.png"
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -63,12 +69,18 @@ const Recommends=()=>{
           type: 'image',
           src: result2,
         },
-        
+           {
+          type: 'image',
+          src: result20,
+        },
         {
           type: 'image',
           src: result12,
         },
-     
+        {
+          type: 'image',
+          src: result21,
+        },
         
           {
             type: 'image',
@@ -78,6 +90,10 @@ const Recommends=()=>{
             type: 'image',
             src: result13,
           },
+             {
+          type: 'image',
+          src: result22,
+        },
           {
             type: 'image',
             src: result7,
@@ -86,14 +102,26 @@ const Recommends=()=>{
             type: 'image',
             src: result16,
           },
+             {
+          type: 'image',
+          src: result23,
+        },
           {
             type: 'image',
             src: result14,
           },
+             {
+          type: 'image',
+          src: result24,
+        },
           {
             type: 'image',
             src: result15,
           },
+             {
+          type: 'image',
+          src: result25,
+        },
           {
             type: 'image',
             src: result18,
