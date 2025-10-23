@@ -31,8 +31,8 @@ import result28 from "../../images/ענבל דוגמאות לציפורניים 
 import result29 from "../../images/ענבל דוגמאות לציפורניים 4.png"
 const Works = () => {
   const images = [
-    result1, result2, , result20, result23, result24,result25, result26,
-    result7, result8, result9, result27,result28,result29, result11 , result21,result12,  result22,result13, result14, result15,result25, result16, result17, result19, result18
+    result1, result2, , result20, result23,result25, result26,
+    result7, result8, result9, result27,result28,result29, result11 , result21,result12,  result22,result13, result14, result15,result25,  result17, 
   ];
 
   return (
