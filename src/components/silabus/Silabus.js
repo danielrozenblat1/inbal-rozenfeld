@@ -37,11 +37,11 @@ const Silabus = () => {
   ];
 
   const courseDetails4 = [
-    { text: "5 שעות לימוד | מפגש 1", icon: icon1 },
+    { text: "4 שעות לימוד | מפגש 1", icon: icon1 },
     { text: "קבלת תעודת מקצוע", icon: icon4 },
     { text: "ליווי אישי לאחר ההשתלמות", icon: icon5 },
-    { text: "מסלול בוקר: 9:00-14:00", icon: icon6 },
-    { text: "מסלול ערב: 15:00-20:00", icon: icon7 },
+    { text: "מסלול בוקר: 9:00-13:00", icon: icon6 },
+    { text: "מסלול ערב: 16:00-20:00", icon: icon7 },
     { text: "עבודה מעשית על מודליסטית", icon: icon8 }
   ];
   const courseTopics = [
@@ -215,45 +215,45 @@ const Silabus = () => {
     ],
   };
 
-  const NailItContent = () => (
-    <div className={styles.courseContainer}>
-        <h3 className={styles.courseTitle}>
-        קורס Nail It יקנה לכן את כל היסודות והמיומנויות בתחום{' '}
-        <span className={styles.goldGradient}>בדגש על בנייה בג׳ל:</span>
-      </h3>
-      <ul className={styles.topicsList}>
-        {courseTopics.map((topic, index) => (
-          <li key={index} className={styles.topicItem}>
-            <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} />
-            <span>{topic}</span>
-          </li>
-        ))}
-      </ul>
+  // const NailItContent = () => (
+  //   <div className={styles.courseContainer}>
+  //       <h3 className={styles.courseTitle}>
+  //       קורס Nail It יקנה לכן את כל היסודות והמיומנויות בתחום{' '}
+  //       <span className={styles.goldGradient}>בדגש על בנייה בג׳ל:</span>
+  //     </h3>
+  //     <ul className={styles.topicsList}>
+  //       {courseTopics.map((topic, index) => (
+  //         <li key={index} className={styles.topicItem}>
+  //           <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} />
+  //           <span>{topic}</span>
+  //         </li>
+  //       ))}
+  //     </ul>
 
-      <h4 className={styles.sectionTitle}>היקף הקורס:</h4>
-      <ul className={styles.detailsList}>
-        {courseDetails.map((detail, index) => (
-          <li key={index} className={styles.detailItem}>
-            <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
-            <span>{detail.text}</span>
-          </li>
-        ))}
-      </ul>
+  //     <h4 className={styles.sectionTitle}>היקף הקורס:</h4>
+  //     <ul className={styles.detailsList}>
+  //       {courseDetails.map((detail, index) => (
+  //         <li key={index} className={styles.detailItem}>
+  //           <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+  //           <span>{detail.text}</span>
+  //         </li>
+  //       ))}
+  //     </ul>
 
-      <div className={styles.premiumSection}>
-        <h3 className={styles.premiumTitle}>בנוסף תקבלי</h3>
-        <h3 className={styles.premiumTitle}>ערכת PREMIUM במחיר מיוחד עבורך:</h3>
-        <p>במסגרת הצטרפותך לקורס תוכלי להנות מהטבה מיוחדת לרכישת ערכת לימוד מפוארת של מותגים מובילים המכילה את כל מה שאת צריכה לתחילת דרכך.</p>
-        <p>שווי הערכה: <span className={styles.originalPrice}>3,500 ש"ח</span></p>
-        <p className={styles.discountedPrice}>בשבילך: 2,500 ש"ח</p>
-      </div>
+  //     <div className={styles.premiumSection}>
+  //       <h3 className={styles.premiumTitle}>בנוסף תקבלי</h3>
+  //       <h3 className={styles.premiumTitle}>ערכת PREMIUM במחיר מיוחד עבורך:</h3>
+  //       <p>במסגרת הצטרפותך לקורס תוכלי להנות מהטבה מיוחדת לרכישת ערכת לימוד מפוארת של מותגים מובילים המכילה את כל מה שאת צריכה לתחילת דרכך.</p>
+  //       <p>שווי הערכה: <span className={styles.originalPrice}>3,500 ש"ח</span></p>
+  //       <p className={styles.discountedPrice}>בשבילך: 2,500 ש"ח</p>
+  //     </div>
 
-      <p className={styles.paymentOptions}>
-        אפשרויות תשלום: אשראי (עד 3 תשלומים) / מזומן / העברה בנקאית
-      </p>
-      <Button text="קורס NAIL IT מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס NAIL IT"/>
-    </div>
-  );
+  //     <p className={styles.paymentOptions}>
+  //       אפשרויות תשלום: אשראי (עד 3 תשלומים) / מזומן / העברה בנקאית
+  //     </p>
+  //     <Button text="קורס NAIL IT מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס NAIL IT"/>
+  //   </div>
+  // );
 
   const NailMasterContent = () => {
 
@@ -305,7 +305,7 @@ const PremiumContent = () => {
   return (
     <div className={styles.courseContainer}>
     <h3 className={styles.courseTitle}>
-        קורס פרימיום חדש המאחד את 2 הקורסים לקורס אחד!{' '}
+        קורס פרימיום המאחד את 2 הקורסים לקורס אחד!{' '}
         <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל  <br/> ובנייה בג׳ל:</span>
       </h3>
       <div className={styles.premiumFeatures}>
@@ -388,20 +388,20 @@ const PremiumContent = () => {
 
   return (
     <Slider {...sliderSettings}>
-      <DropdownAccordion 
+      {/* <DropdownAccordion 
         title={<BoxPlus image={nailIt} description="קורס NAIL IT למתחילות"/>} 
         content={<NailItContent />}
-      />
+      /> */}
       <DropdownAccordion 
-        title={<BoxPlus image={nailMaster} description="קורס NAIL MASTER למתחילות"/>} 
+        title={<BoxPlus image={nailMaster} description="קורס לק ג׳ל ומבנה אנטומי למתחילות"/>} 
         content={<NailMasterContent />}
       />
       <DropdownAccordion 
-        title={<BoxPlus image={premium} description="קורס PREMIUM למתחילות"/>} 
+        title={<BoxPlus image={premium} description="קורס לק ג׳ל ובנייה בג׳ל למתחילות"/>} 
         content={<PremiumContent />}
       />
           <DropdownAccordion 
-        title={<BoxPlus image={levelUp} description="קורס Level Up למתקדמות"/>} 
+        title={<BoxPlus image={levelUp} description="השתלמות העלאת רמה למקצועיות"/>} 
         content={<LevelUpContent />}
       />
     </Slider>

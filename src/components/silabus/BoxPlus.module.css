@@ -13,7 +13,7 @@ margin:2% auto;
     justify-content: center;
 }
 .image{
-    height:180px;
+    height:200px;
  margin:1% auto; 
  object-fit: cover;
  justify-content: center;
@@ -76,14 +76,14 @@ text-align: center;
         justify-content: center;
     }
     .image{
-        height:100px;
+        height:120px;
      margin:2% auto; 
      object-fit: cover;
      justify-content: center;
     }
     .description{
     font-family: "AssistantR";
-    font-size:1.1rem;
+    font-size:1rem;
     color:rgb(0, 0, 0);
     width:100%;
     margin:0 auto;
