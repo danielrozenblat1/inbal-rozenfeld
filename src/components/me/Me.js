@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Me.module.css';
-import inbal from "../../images/ענבל רוזנפלד.png"
+import inbal from "../../images/ענבל רוזנפלד.webp"
 const AboutMe = () => {
   return <>
       <div className={styles.header} id="מי אני">נעים מאוד</div>
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={inbal} alt="ענבל רוזנפלד" className={styles.image} />
+        <img src={inbal} alt="ענבל רוזנפלד" className={styles.image} loading="lazy" decoding="async" />
       </div>
       <div className={styles.content}>
         <h1 className={styles.title}>ענבל רוזנפלד</h1>

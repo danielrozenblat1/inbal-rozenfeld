@@ -28,7 +28,7 @@ const BoxPlus=(props)=>{
     
     return <>
     <div id={props.id}>
-    <div className={styles.icon}><img className={styles.image} src={props.image} alt="ענבל רוזנפלד"/></div>
+    <div className={styles.icon}><img className={styles.image} src={props.image} alt="ענבל רוזנפלד" loading="lazy" decoding="async"/></div>
     <div className={styles.description}>{props.description}</div>
     {/* <BoxButton text="לשלבי המיון" id={props.id} onClick={props.onClick} /> */}
     </div>

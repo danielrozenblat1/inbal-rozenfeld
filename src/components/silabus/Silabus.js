@@ -1,8 +1,8 @@
 import React from 'react';
 import { DropdownAccordion } from "../Akordion/Akordion";
-import nailIt from "../../images/קורס נייל איט למתחילות.png";
-import nailMaster from "../../images/קורס נייל מאסטר למתחילות.png";
-import premium from "../../images/קורס פרימיום למתחילות.png";
+import nailIt from "../../images/קורס נייל איט למתחילות.webp";
+import nailMaster from "../../images/ענבל רוזנפלד גולד.webp";
+import premium from "../../images/קורס פרימיום למתחילות.webp";
 import BoxPlus from "./BoxPlus";
 import styles from "./Silabus.module.css";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -15,16 +15,16 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import icon1 from '../../images/work.png';
-import icon2 from '../../images/class.png';
-import icon3 from '../../images/homework.png';
-import icon4 from '../../images/certificate.png';
-import icon5 from '../../images/withyou.png';
-import icon6 from '../../images/sun.png';
-import icon7 from '../../images/moon.png';
-import icon8 from "../../images/מודליסטית.png"
+import icon1 from '../../images/work.webp';
+import icon2 from '../../images/class.webp';
+import icon3 from '../../images/homework.webp';
+import icon4 from '../../images/certificate.webp';
+import icon5 from '../../images/withyou.webp';
+import icon6 from '../../images/sun.webp';
+import icon7 from '../../images/moon.webp';
+import icon8 from "../../images/מודליסטית.webp"
 import Button from '../button/Button';
-import levelUp from "../../images/קורס לבל אפ למתקדמות.png";
+import levelUp from "../../images/קורס לבל אפ למתקדמות.webp";
 const Silabus = () => {
 
   const courseTopics4 = [
@@ -115,6 +115,17 @@ const Silabus = () => {
 
   const courseDetails2 = [
     { text: "16 שעות לימוד | 4 מפגשים 4 שעות כל שיעור", icon: icon1 },
+    { text: "כיתת לימוד פרטנית עד 2 תלמידות", icon: icon2 },
+    { text: "שיעורי בית פרקטיים לאחר כל מפגש", icon: icon3 },
+    { text: "קבלת תעודת מקצוע", icon: icon4 },
+    { text: "ליווי אישי לאחר הקורס", icon: icon5 },
+    { text: "מסלול בוקר: 09:00-13:00", icon: icon6 },
+    { text: "מסלול ערב: 16:00-20:00", icon: icon7 },
+    { text: "עבודה מעשית על מודליסטית", icon: icon8 }
+  ];
+
+  const courseDetailsGold = [
+    { text: "24 שעות לימוד | 6 מפגשים | 4 שעות כל מפגש", icon: icon1 },
     { text: "כיתת לימוד פרטנית עד 2 תלמידות", icon: icon2 },
     { text: "שיעורי בית פרקטיים לאחר כל מפגש", icon: icon3 },
     { text: "קבלת תעודת מקצוע", icon: icon4 },
@@ -234,7 +245,7 @@ const Silabus = () => {
   //     <ul className={styles.detailsList}>
   //       {courseDetails.map((detail, index) => (
   //         <li key={index} className={styles.detailItem}>
-  //           <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+  //           <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} loading="lazy" decoding="async" />
   //           <span>{detail.text}</span>
   //         </li>
   //       ))}
@@ -260,12 +271,18 @@ const Silabus = () => {
 
   return (
     <div className={styles.courseContainer}>
-      <h3 className={styles.courseTitle}>
-        קורס Nail Master יקנה לכן את כל היסודות והמיומנויות המתקדמות בתחום הציפורניים{' '}
-        <span className={styles.goldGradient}>בדגש על מניקור לק ג׳ל:</span>
+    <h3 className={styles.courseTitle}>
+        קורס GOLD המאחד את 2 הקורסים לקורס אחד!{' '}
+        <span className={styles.goldGradient}>בדגש על לק ג׳ל, בנייה בג׳ל וקישוטים:</span>
       </h3>
+      <div className={styles.premiumFeatures}>
+        <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> מניקור לק ג׳ל על ציפורניים טבעיות</p>
+        <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> בנייה בג׳ל בשיטות המתקדמות ביותר</p>
+        <p><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> לימוד קישוטים: פרנ׳ץ/ אומברה/ אקווריום</p>
+      </div>
+      <h4 className={styles.sectionTitle}>בקורס תלמדי:</h4>
       <ul className={styles.topicsList}>
-        {courseTopics1.map((topic, index) => (
+        {courseTopics2.map((topic, index) => (
           <li key={index} className={styles.topicItem}>
             <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} />
             <span>{topic}</span>
@@ -275,9 +292,9 @@ const Silabus = () => {
 
       <h4 className={styles.sectionTitle}>היקף הקורס:</h4>
       <ul className={styles.detailsList}>
-        {courseDetails1.map((detail, index) => (
+        {courseDetailsGold.map((detail, index) => (
           <li key={index} className={styles.detailItem}>
-            <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+            <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} loading="lazy" decoding="async" />
             <span>{detail.text}</span>
           </li>
         ))}
@@ -294,7 +311,7 @@ const Silabus = () => {
       <p className={styles.paymentOptions}>
         אפשרויות תשלום: אשראי (עד 3 תשלומים) / מזומן / העברה בנקאית
       </p>
-      <Button text="קורס NAIL MASTER מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס NAIL MASTER"/>
+      <Button text="קורס ה GOLD מעניין אותי" message="היי ענבל, אשמח לשמוע עוד על קורס ה GOLD"/>
     </div>
   );
 };
@@ -326,7 +343,7 @@ const PremiumContent = () => {
       <ul className={styles.detailsList}>
         {courseDetails2.map((detail, index) => (
           <li key={index} className={styles.detailItem}>
-            <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+            <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} loading="lazy" decoding="async" />
             <span>{detail.text}</span>
           </li>
         ))}
@@ -371,7 +388,7 @@ const PremiumContent = () => {
         <ul className={styles.detailsList}>
           {courseDetails4.map((detail, index) => (
             <li key={index} className={styles.detailItem}>
-              <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} />
+              <img src={detail.icon} alt={`Icon ${index + 1}`} className={styles.detailIcon} loading="lazy" decoding="async" />
               <span>{detail.text}</span>
             </li>
           ))}
@@ -393,7 +410,7 @@ const PremiumContent = () => {
         content={<NailItContent />}
       /> */}
       <DropdownAccordion 
-        title={<BoxPlus image={nailMaster} description="קורס לק ג׳ל ומבנה אנטומי למתחילות"/>} 
+        title={<BoxPlus image={nailMaster} description="קורס לק ג׳ל, בנייה בג׳ל וקישוטים למתחילות"/>}
         content={<NailMasterContent />}
       />
       <DropdownAccordion 

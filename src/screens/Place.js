@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Place.module.css';
-import place from "../images/ענבל רוזנפלד קליניקה מיקום.png"
+import place from "../images/ענבל רוזנפלד קליניקה מיקום.webp"
 const Location = () => {
   return (
     <div className={styles.container}>

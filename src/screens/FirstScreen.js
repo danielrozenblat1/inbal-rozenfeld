@@ -1,5 +1,5 @@
 import styles from "./FirstScreen.module.css"
-import inbal from "../images/ענבל רוזנפלד.png"
+import inbal from "../images/ענבל רוזנפלד.webp"
 
 import FormScreen from "../components/form/FormScreen"
 import AboutMe from "../components/me/Me"

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Button from "../button/Button"
 import styles from "./NailPackage.module.css"
-import nailIt from "../../images/קורס נייל איט למתחילות.png"
-import nailMaster from "../../images/קורס נייל מאסטר למתחילות.png"
-import premium from "../../images/קורס פרימיום למתחילות.png"
+import nailIt from "../../images/קורס נייל איט למתחילות.webp"
+import nailMaster from "../../images/ענבל רוזנפלד גולד.webp"
+import premium from "../../images/קורס פרימיום למתחילות.webp"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -16,7 +16,7 @@ const AccordionItem = ({ title, image, content, buttonText, buttonMessage }) => 
     <div className={styles.accordionItem}>
       <div className={styles.accordionHeader} onClick={() => setIsOpen(!isOpen)}>
         <div className={styles.title}>{title}</div>
-        <div className={styles.center}><img className={styles.image} src={image} alt={title}/></div>
+        <div className={styles.center}><img className={styles.image} src={image} alt={title} loading="lazy" decoding="async"/></div>
         <ExpandMoreIcon className={`${styles.expandIcon} ${isOpen ? styles.rotated : ''}`} />
       </div>
       {isOpen && (

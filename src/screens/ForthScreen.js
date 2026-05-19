@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ShapedComponent from "../components/shape/Shape";
-import shapeone from "../images/ענבל רוזנפלד תלמידות 2.png"
+import shapeone from "../images/ענבל רוזנפלד תלמידות 2.webp"
 import NailPackage from "../components/nailpackage/NailPackage";
 
 const ForthScreen=()=>{
